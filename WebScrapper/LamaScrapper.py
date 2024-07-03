@@ -186,39 +186,3 @@ with open(json_file, mode='w', encoding='utf-8') as file:
         
             
 
-
-            
-#         # getting the image form div class "grid-product__image-mask"
-#         images = soup.find_all('div', class_='grid-product__image-mask')
-#         print("Image :", images)
-#         # getting the name from div class "grid-product__title grid-product__title--body"
-#         names = soup.find_all('div', class_='grid-product__title grid-product__title--body')
-#         print("Name : ", names)
-#         # getting the price from span class "grid-product__price"
-#         prices = soup.find_all('span', class_='grid-product__price')
-#         print("Price :", prices)
-#         # getting the link from a tag class "grid-product__link"
-#         links = soup.find_all('a', class_='grid-product__link')
-#         print("Link :", links)
-        
-#         # adding to the dictionary
-#         info['Name'] += names
-#         info['Price'] += prices
-#         info['Image'] += images
-#         info['Link'] += links
-    
-    
-    
-# # Write dictionary to CSV file
-# csvFile = 'Lama.csv'  # writing the headings of the columns
-# with open(csvFile, mode='w', newline='', encoding='utf-8') as file:  # using an encoder for special characters
-#     fieldnames = list(info.keys())  # typecasting the keys into a list
-#     writer = csv.DictWriter(file, fieldnames=fieldnames)
-#     writer.writeheader()
-
-#     for i in range(len(info['Name'])):  # according to number of items, we are copying every value of every key into it's respective heading
-#         row = {}
-#         for key in info.keys():
-#             print(info[key][i])
-
-#         writer.writerow(row)
