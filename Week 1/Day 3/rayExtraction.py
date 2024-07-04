@@ -12,10 +12,9 @@ def retrieve(item):
     return item, database[item]
 
 
-def print_runtime(input_data, start_time):
-    print(f'Runtime: {time.time() - start_time:.2f} seconds, data:')
+def print_runtime(input_data, start_time):  
     print(*input_data, sep="\n")
-
+    print(f'Runtime: {time.time() - start_time:.2f} seconds, data:')
 
 start = time.time()
 data = [retrieve(item) for item in range(8)]

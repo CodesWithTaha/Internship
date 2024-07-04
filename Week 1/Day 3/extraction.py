@@ -12,8 +12,8 @@ def retrieve(item):
 
 
 def print_runtime(input_data, start_time):
-    print(f'Runtime: {time.time() - start_time:.2f} seconds, data:')
     print(*input_data, sep="\n")
+    print(f'Runtime: {time.time() - start_time:.2f} seconds, data:')
 
 
 start = time.time()
