@@ -2,12 +2,12 @@ import ray
 import time
 import numpy as np
 from typing import Dict
-
+from sklearn.datasets import load_iris
 # Initialize Ray
 ray.init()
 startTime = time.time()
 # Load the Iris dataset
-from sklearn.datasets import load_iris
+
 data = load_iris(as_frame=True)
 df = data.frame
 
