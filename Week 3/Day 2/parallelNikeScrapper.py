@@ -150,10 +150,10 @@ if __name__ == '__main__':
     processes = len(links)
 
     # Using Pool for parallel execution
-    # with Pool(processes) as pool:
-    #     results = pool.map(scrapeParallel, links)
+    with Pool(processes) as pool:
+        results = pool.map(scrapeParallel, links)
 
-#     # Displaying results
-#     for result in results:
-#         if result:
-#             print(result)
+    # Displaying results
+    for result in results:
+        if result:
+            print(result)
